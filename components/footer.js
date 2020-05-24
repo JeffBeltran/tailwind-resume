@@ -1,4 +1,5 @@
 import { menuOptions } from "../lib/menu-options";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -8,13 +9,11 @@ function Footer() {
           <div className="flex px-5 py-2 space-x-10">
             {menuOptions.map((menuOption, index) => {
               return (
-                <a
-                  key={index}
-                  href={menuOption.path}
-                  className="text-base leading-6 text-teal-500 hover:text-teal-900"
-                >
-                  {menuOption.name}
-                </a>
+                <Link key={index} href={menuOption.path}>
+                  <a className="text-base leading-6 text-teal-500 hover:text-white">
+                    {menuOption.name}
+                  </a>
+                </Link>
               );
             })}
           </div>

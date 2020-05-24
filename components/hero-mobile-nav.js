@@ -1,4 +1,5 @@
 import { menuOptions } from "../lib/menu-options";
+import Link from "next/link";
 
 function HeroMobileNav({ toggleMobile }) {
   return (
@@ -38,13 +39,11 @@ function HeroMobileNav({ toggleMobile }) {
           <div className="px-2 pt-2 pb-3">
             {menuOptions.map((option, index) => {
               return (
-                <a
-                  key={index}
-                  href={option.path}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
-                >
-                  {option.name}
-                </a>
+                <Link key={index} href={option.path}>
+                  <a className="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">
+                    {option.name}
+                  </a>
+                </Link>
               );
             })}
           </div>

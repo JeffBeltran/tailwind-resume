@@ -1,17 +1,11 @@
 import { menuOptions } from "../lib/menu-options";
+import Link from "next/link";
 
 function HeroMainNav({ toggleMobile }) {
   return (
     <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
       <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
         <div className="flex items-center justify-between w-full md:w-auto">
-          <a href="#">
-            <img
-              className="w-auto h-8 sm:h-10"
-              src="/img/logos/workflow-mark-on-white.svg"
-              alt=""
-            />
-          </a>
           <div className="flex items-center -mr-2 md:hidden">
             <button
               onClick={toggleMobile}
@@ -38,13 +32,11 @@ function HeroMainNav({ toggleMobile }) {
       <div className="hidden space-x-10 md:flex">
         {menuOptions.map((option, index) => {
           return (
-            <a
-              key={index}
-              href={option.path}
-              className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
-            >
-              {option.name}
-            </a>
+            <Link key={index} href={option.path}>
+              <a className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900">
+                {option.name}
+              </a>
+            </Link>
           );
         })}
       </div>

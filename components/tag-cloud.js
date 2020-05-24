@@ -18,12 +18,11 @@ function TagCloud(params) {
             </p>
             <div className="mt-8 sm:flex">
               <div className="rounded-md shadow">
-                <a
-                  href="#"
-                  className="flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-teal-600 border border-transparent rounded-md hover:bg-teal-500 focus:outline-none focus:shadow-outline"
-                >
-                  View Full Knowledge Cloud
-                </a>
+                <Link href="#">
+                  <a className="flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-teal-600 border border-transparent rounded-md hover:bg-teal-500 focus:outline-none focus:shadow-outline">
+                    View Full Knowledge Cloud
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
