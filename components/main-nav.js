@@ -24,7 +24,6 @@ function MainNav({ activeUrl }) {
                 return (
                   <Link href={menuOption.path} key={index}>
                     <a
-                      href={menuOption.path}
                       className={`${
                         menuOption.path === activeUrl
                           ? "border-teal-500"

@@ -8,7 +8,7 @@ function FAQ() {
     <div className="bg-gray-50">
       <div className="max-w-screen-xl px-4 py-12 mx-auto sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-extrabold leading-9 text-center text-gray-900 sm:text-4xl sm:leading-10">
+          <h2 className="text-3xl font-extrabold leading-9 text-center text-gray-900 font-heading sm:text-4xl sm:leading-10">
             Frequently asked questions
           </h2>
           <div className="mt-6 border-t-2 border-gray-200">
@@ -22,7 +22,7 @@ function FAQ() {
                         onClick={() => setActiveQuestionIndex(index)}
                         className="flex items-start justify-between w-full text-left text-gray-400 focus:outline-none focus:text-gray-900"
                       >
-                        <span className="font-medium text-gray-900">
+                        <span className="text-xl font-medium text-gray-900 font-heading">
                           {questionAnswer.question}
                         </span>
                         <span className="flex items-center ml-6 h-7">
@@ -51,7 +51,7 @@ function FAQ() {
                         activeQuestionIndex !== index && "hidden"
                       } pr-12 mt-2`}
                     >
-                      <p className="text-base leading-6 text-gray-500">
+                      <p className="text-base leading-6 text-gray-500 font-body">
                         {questionAnswer.answer}
                       </p>
                     </dd>

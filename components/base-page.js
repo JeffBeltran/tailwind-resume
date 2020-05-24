@@ -7,8 +7,8 @@ function BasePage({ children, pageTitle, activeUrl }) {
       <MainNav activeUrl={activeUrl}></MainNav>
       <div className="flex-1 py-10">
         <header>
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold leading-tight text-gray-900">
+          <div className="px-4 pb-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h1 className="text-5xl font-bold leading-tight text-teal-400 font-heading">
               {pageTitle}
             </h1>
           </div>

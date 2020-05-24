@@ -12,6 +12,8 @@ module.exports = {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
         handwriting: ["Rock Salt", ...defaultTheme.fontFamily.serif],
+        heading: ["Roboto Condensed", ...defaultTheme.fontFamily.sans],
+        body: ["Cabin", ...defaultTheme.fontFamily.sans],
       },
     },
   },
