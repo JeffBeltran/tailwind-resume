@@ -1,5 +1,7 @@
 import { BasePage, Card, TextBlock } from "../components";
 import { useRouter } from "next/router";
+import { relevantTags } from "../lib/knowlege-tags";
+import Link from "next/link";
 
 export default function Resume() {
   const router = useRouter();
@@ -20,17 +22,22 @@ export default function Resume() {
             </TextBlock>
           </Card>
           <Card heading="Relevant Proficiencies">
-            <TextBlock>
-              Massa per inceptos molestie varius condimentum habitasse nam duis
-              lacinia, sociis magnis ut iaculis nostra semper tempus cubilia
-              penatibus, curae primis ad pretium tortor faucibus litora
-              curabitur. Lobortis proin mollis phasellus tempor nisi cubilia
-              molestie, lacinia sagittis natoque odio accumsan consectetur,
-              commodo aptent facilisi morbi libero ultricies. Imperdiet donec
-              suscipit odio magnis ante velit dictum sollicitudin, bibendum
-              aliquet nunc auctor lobortis dui placerat vivamus, fusce mauris
-              phasellus convallis et proin pharetra.
-            </TextBlock>
+            <div className="grid grid-cols-3 gap-4 ">
+              {relevantTags.map((tag, index) => {
+                return (
+                  <Link href={`/knowledge-cloud/${tag.slug}`} key={index}>
+                    <a className="items-center p-4 text-sm font-medium leading-5 text-teal-800 bg-teal-100 rounded hover:bg-teal-400">
+                      {tag.name}
+                    </a>
+                  </Link>
+                );
+              })}
+              <Link href={`/knowledge-cloud`}>
+                <a className="items-center p-4 text-sm font-medium leading-5 text-teal-500 border border-transparent rounded hover:text-teal-800 hover:border-teal-800">
+                  View all Proficiencies ...
+                </a>
+              </Link>
+            </div>
           </Card>
           <Card heading="Professional Experience">
             <TextBlock>
