@@ -1,7 +1,8 @@
-import { BasePage, Card, TextBlock } from "../components";
+import { BasePage, Card, TextBlock, Job } from "../components";
 import { useRouter } from "next/router";
 import { relevantTags } from "../lib/knowlege-tags";
 import Link from "next/link";
+import { jobs } from "../lib/jobs";
 
 export default function Resume() {
   const router = useRouter();
@@ -40,17 +41,11 @@ export default function Resume() {
             </div>
           </Card>
           <Card heading="Professional Experience">
-            <TextBlock>
-              Massa per inceptos molestie varius condimentum habitasse nam duis
-              lacinia, sociis magnis ut iaculis nostra semper tempus cubilia
-              penatibus, curae primis ad pretium tortor faucibus litora
-              curabitur. Lobortis proin mollis phasellus tempor nisi cubilia
-              molestie, lacinia sagittis natoque odio accumsan consectetur,
-              commodo aptent facilisi morbi libero ultricies. Imperdiet donec
-              suscipit odio magnis ante velit dictum sollicitudin, bibendum
-              aliquet nunc auctor lobortis dui placerat vivamus, fusce mauris
-              phasellus convallis et proin pharetra.
-            </TextBlock>
+            <div className="space-y-6 divide-y divide-teal-400">
+              {jobs.map((job, index) => {
+                return <Job job={job} key={index}></Job>;
+              })}
+            </div>
           </Card>
           <Card heading="Education">
             <TextBlock>

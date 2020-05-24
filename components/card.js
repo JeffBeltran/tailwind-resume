@@ -1,12 +1,12 @@
 function Card({ children, heading }) {
   return (
-    <div class="bg-gray-50 text-teal-900 overflow-hidden shadow rounded-lg">
+    <div className="overflow-hidden text-teal-900 rounded-lg shadow bg-gray-50">
       {heading && (
-        <div class="font-heading text-3xl border-b-2 border-dashed border-teal-400 px-4 py-5 sm:px-6">
+        <div className="px-4 py-5 text-3xl border-b-2 border-teal-400 border-dashed font-heading sm:px-6">
           {heading}
         </div>
       )}
-      <div class="px-4 py-5 sm:p-6">{children}</div>
+      <div className="px-4 py-5 sm:p-6">{children}</div>
     </div>
   );
 }
