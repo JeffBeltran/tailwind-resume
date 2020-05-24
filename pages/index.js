@@ -1,4 +1,4 @@
-import { Hero, Testimonial, FAQ, CTA, TagCloud } from "../components";
+import { Hero, Testimonial, FAQ, CTA, TagCloud, Footer } from "../components";
 
 export default function Home() {
   return (
@@ -15,7 +15,6 @@ export default function Home() {
           He took a little over a week to apply, as he had to teach himself
           React and Nextjs. But he proved to himself that his imposter syndrome
           was all for naught and showed Adam he had the right chops for the job.
-          job.
         </p>
       </Hero>
       <Testimonial
@@ -29,6 +28,7 @@ export default function Home() {
       <FAQ></FAQ>
       <CTA></CTA>
       <TagCloud></TagCloud>
+      <Footer></Footer>
     </>
   );
 }
