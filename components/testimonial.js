@@ -1,6 +1,6 @@
 function Testimonial({ children, imgSrc, name, who, from }) {
   return (
-    <section className="overflow-hidden bg-white font-body">
+    <section className="overflow-hidden bg-white ">
       <div className="relative max-w-screen-xl px-4 pt-20 pb-12 mx-auto sm:px-6 lg:px-8 lg:py-20">
         <svg
           className="absolute left-0 transform -translate-y-24 top-full translate-x-80 lg:hidden"

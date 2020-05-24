@@ -51,7 +51,7 @@ function FAQ() {
                         activeQuestionIndex !== index && "hidden"
                       } pr-12 mt-2`}
                     >
-                      <p className="text-base leading-6 text-gray-500 font-body">
+                      <p className="text-base leading-6 text-gray-500 ">
                         {questionAnswer.answer}
                       </p>
                     </dd>

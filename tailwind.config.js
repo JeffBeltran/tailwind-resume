@@ -10,10 +10,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["Cabin", ...defaultTheme.fontFamily.sans],
         handwriting: ["Rock Salt", ...defaultTheme.fontFamily.serif],
         heading: ["Roboto Condensed", ...defaultTheme.fontFamily.sans],
-        body: ["Cabin", ...defaultTheme.fontFamily.sans],
       },
     },
   },

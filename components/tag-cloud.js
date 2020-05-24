@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { tagHighlights } from "../lib/knowlege-tags";
 
-function TagCloud(params) {
+function TagCloud() {
   return (
     <div className="bg-gray-50">
       <div className="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8">
@@ -10,7 +10,7 @@ function TagCloud(params) {
             <h2 className="text-3xl font-extrabold leading-9 text-gray-900 font-heading sm:text-4xl sm:leading-10">
               What kind of knowledge is Jeff bringing to the Tailwind team?
             </h2>
-            <p className="max-w-3xl mt-3 text-lg leading-7 text-gray-500 font-body">
+            <p className="max-w-3xl mt-3 text-lg leading-7 text-gray-500 ">
               He was kind enough to put together a list of frameworks, languages
               and relevant technologies he has used in some compactly. To the
               right are the most relevant but feel free to browse the full tag
