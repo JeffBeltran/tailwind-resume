@@ -2,7 +2,7 @@ import MainNav from "./main-nav";
 
 function BasePage({ children, pageTitle, activeUrl }) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white">
       <MainNav activeUrl={activeUrl}></MainNav>
       <div className="py-10">
         <header>
