@@ -1,4 +1,4 @@
-import { Hero, Testimonial, FAQ } from "../components";
+import { Hero, Testimonial, FAQ, CTA } from "../components";
 
 export default function Home() {
   return (
@@ -27,6 +27,7 @@ export default function Home() {
         Woof Woof Bark Bark
       </Testimonial>
       <FAQ></FAQ>
+      <CTA></CTA>
     </>
   );
 }
