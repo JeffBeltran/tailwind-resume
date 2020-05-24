@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import { relevantTags } from "../lib/knowlege-tags";
 import Link from "next/link";
 import { jobs } from "../lib/jobs";
+import { degrees } from "../lib/degrees";
+import { projects } from "../lib/projects";
 
 export default function Resume() {
   const router = useRouter();
@@ -48,30 +50,21 @@ export default function Resume() {
             </div>
           </Card>
           <Card heading="Education">
-            <TextBlock>
-              Massa per inceptos molestie varius condimentum habitasse nam duis
-              lacinia, sociis magnis ut iaculis nostra semper tempus cubilia
-              penatibus, curae primis ad pretium tortor faucibus litora
-              curabitur. Lobortis proin mollis phasellus tempor nisi cubilia
-              molestie, lacinia sagittis natoque odio accumsan consectetur,
-              commodo aptent facilisi morbi libero ultricies. Imperdiet donec
-              suscipit odio magnis ante velit dictum sollicitudin, bibendum
-              aliquet nunc auctor lobortis dui placerat vivamus, fusce mauris
-              phasellus convallis et proin pharetra.
-            </TextBlock>
+            {degrees.map((degree, index) => {
+              return (
+                <div key={index} className="text-lg">
+                  <p className="font-heading">{`${degree.level} in ${degree.field}`}</p>
+                  <p>{`${degree.institution.name}, ${degree.institution.city}, ${degree.institution.state}`}</p>
+                </div>
+              );
+            })}
           </Card>
-          <Card heading="Relevant Side Project">
-            <TextBlock>
-              Massa per inceptos molestie varius condimentum habitasse nam duis
-              lacinia, sociis magnis ut iaculis nostra semper tempus cubilia
-              penatibus, curae primis ad pretium tortor faucibus litora
-              curabitur. Lobortis proin mollis phasellus tempor nisi cubilia
-              molestie, lacinia sagittis natoque odio accumsan consectetur,
-              commodo aptent facilisi morbi libero ultricies. Imperdiet donec
-              suscipit odio magnis ante velit dictum sollicitudin, bibendum
-              aliquet nunc auctor lobortis dui placerat vivamus, fusce mauris
-              phasellus convallis et proin pharetra.
-            </TextBlock>
+          <Card heading="Relevant Side Projects">
+            <div className="space-y-6 divide-y divide-teal-400">
+              {projects.map((job, index) => {
+                return <Job job={job} key={index}></Job>;
+              })}
+            </div>
           </Card>
         </div>
       </BasePage>
