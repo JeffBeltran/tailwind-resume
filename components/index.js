@@ -2,6 +2,8 @@ export { default as Hero } from "./hero";
 export { default as FAQ } from "./faq";
 export { default as CTA } from "./cta";
 export { default as Footer } from "./footer";
+export { default as Card } from "./card";
+export { default as TextBlock } from "./text-block";
 export { default as TagCloud } from "./tag-cloud";
 export { default as BasePage } from "./base-page";
 export { default as HeroMainNav } from "./hero-main-nav";
