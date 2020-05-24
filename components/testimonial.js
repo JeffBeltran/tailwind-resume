@@ -56,7 +56,7 @@ function Testimonial({ children, imgSrc, name, who, from }) {
                 y="0"
                 width="4"
                 height="4"
-                className="text-gray-200"
+                className="text-teal-100"
                 fill="currentColor"
               />
             </pattern>
@@ -79,7 +79,7 @@ function Testimonial({ children, imgSrc, name, who, from }) {
 
           <div className="relative lg:ml-10">
             <svg
-              className="absolute top-0 left-0 text-indigo-200 transform -translate-x-8 -translate-y-24 opacity-50 h-36 w-36"
+              className="absolute top-0 left-0 text-teal-200 transform -translate-x-8 -translate-y-24 opacity-50 h-36 w-36"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 144 144"
@@ -106,7 +106,7 @@ function Testimonial({ children, imgSrc, name, who, from }) {
                     <div className="text-base font-medium leading-6 text-gray-900">
                       {name}
                     </div>
-                    <div className="text-base font-medium leading-6 text-indigo-600">
+                    <div className="text-base font-medium leading-6 text-teal-600">
                       {who}, {from}
                     </div>
                   </div>

@@ -28,7 +28,7 @@ function Hero({ children }) {
                   y="0"
                   width="4"
                   height="4"
-                  className="text-gray-200"
+                  className="text-teal-200"
                   fill="currentColor"
                 />
               </pattern>
@@ -60,7 +60,7 @@ function Hero({ children }) {
                   y="0"
                   width="4"
                   height="4"
-                  className="text-gray-200"
+                  className="text-teal-100"
                   fill="currentColor"
                 />
               </pattern>

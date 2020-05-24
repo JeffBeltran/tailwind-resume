@@ -1,4 +1,4 @@
-import { Hero, Testimonial, FAQ, CTA } from "../components";
+import { Hero, Testimonial, FAQ, CTA, TagCloud } from "../components";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
           Introducing the next tailwind employee <br />
         </h2>
 
-        <p className="mt-4 text-4xl font-extrabold leading-10 tracking-tight text-indigo-600 sm:text-5xl sm:leading-none md:text-6xl">
+        <p className="mt-4 text-4xl font-extrabold leading-10 tracking-tight text-teal-600 sm:text-5xl sm:leading-none md:text-6xl">
           Jeff Beltran
         </p>
         <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
@@ -28,6 +28,7 @@ export default function Home() {
       </Testimonial>
       <FAQ></FAQ>
       <CTA></CTA>
+      <TagCloud></TagCloud>
     </>
   );
 }
