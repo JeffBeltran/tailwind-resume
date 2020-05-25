@@ -1,6 +1,6 @@
 import { BasePage, Card, TextBlock, Job } from "../components";
 import { useRouter } from "next/router";
-import { relevantTags } from "../lib/knowlege-tags";
+import { relevantTags } from "../lib/skills";
 import Link from "next/link";
 import { jobs } from "../lib/jobs";
 import { degrees } from "../lib/degrees";
@@ -24,20 +24,20 @@ export default function Resume() {
               Familiarity with Cloud computing concepts, hosting, and databases.
             </TextBlock>
           </Card>
-          <Card heading="Relevant Proficiencies">
+          <Card heading="Relevant Skills">
             <div className="grid grid-cols-3 gap-4 ">
               {relevantTags.map((tag, index) => {
                 return (
-                  <Link href={`/knowledge-cloud/${tag.slug}`} key={index}>
+                  <Link href={`/skills/${tag.slug}`} key={index}>
                     <a className="items-center p-4 text-sm font-medium leading-5 text-teal-800 bg-teal-100 rounded hover:bg-teal-400">
                       {tag.name}
                     </a>
                   </Link>
                 );
               })}
-              <Link href={`/knowledge-cloud`}>
+              <Link href={`/skills`}>
                 <a className="items-center p-4 text-sm font-medium leading-5 text-teal-500 border border-transparent rounded hover:text-teal-800 hover:border-teal-800">
-                  View all Proficiencies ...
+                  View all skills ...
                 </a>
               </Link>
             </div>
