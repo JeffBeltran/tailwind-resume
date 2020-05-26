@@ -1,5 +1,6 @@
 import { menuOptions } from "../lib/menu-options";
 import Link from "next/link";
+import Logo from "./logo";
 
 function HeroMobileNav({ toggleMobile }) {
   return (
@@ -8,11 +9,11 @@ function HeroMobileNav({ toggleMobile }) {
         <div className="overflow-hidden bg-white rounded-lg shadow-xs">
           <div className="flex items-center justify-between px-5 pt-4">
             <div>
-              <img
-                className="w-auto h-8"
-                src="/img/logos/workflow-mark-on-white.svg"
-                alt=""
-              />
+              <Link href="/">
+                <a>
+                  <Logo></Logo>
+                </a>
+              </Link>
             </div>
             <div className="-mr-2">
               <button

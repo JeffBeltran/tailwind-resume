@@ -1,11 +1,15 @@
 import { BasePage, Card, TextBlock } from "../components";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function CoverLetter() {
   const router = useRouter();
 
   return (
     <BasePage pageTitle="Cover Letter" activeUrl={router.pathname}>
+      <Head>
+        <title>I hope this letter finds you well</title>
+      </Head>
       <Card>
         <div className="space-y-6">
           <TextBlock>Hey there Adam and Steve,</TextBlock>

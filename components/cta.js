@@ -9,14 +9,14 @@ function CTA({ children }) {
         </h2>
         <div className="flex justify-center mt-8">
           <div className="inline-flex rounded-md shadow">
-            <Link href="#">
+            <Link href="/cover-letter">
               <a className="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-teal-600 border border-transparent rounded-md hover:bg-teal-500 focus:outline-none focus:shadow-outline">
                 Start with his Cover Letter
               </a>
             </Link>
           </div>
           <div className="inline-flex ml-3">
-            <Link href="#">
+            <Link href="/resume">
               <a className="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-teal-700 transition duration-150 ease-in-out bg-teal-100 border border-transparent rounded-md hover:text-teal-600 hover:bg-teal-50 focus:outline-none focus:shadow-outline focus:border-teal-300">
                 Or His Resume
               </a>

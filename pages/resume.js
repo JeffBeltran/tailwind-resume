@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 import { BasePage, Card, TextBlock, Job } from "../components";
@@ -11,6 +12,9 @@ export default function Resume({ featuredSkills, jobs, degrees }) {
 
   return (
     <BasePage pageTitle="Resume" activeUrl={router.pathname}>
+      <Head>
+        <title>{`Jeff's Resume`}</title>
+      </Head>
       <div className="flex flex-col space-y-8">
         <Card heading="Summary">
           <TextBlock>
@@ -27,7 +31,11 @@ export default function Resume({ featuredSkills, jobs, degrees }) {
           <div className="grid grid-cols-3 gap-4 ">
             {featuredSkills.map((skill, index) => {
               return (
-                <Link href={`/skills/${skill.slug}`} key={index}>
+                <Link
+                  href="/skills/[slug]"
+                  as={`/skills/${skill.slug}`}
+                  key={index}
+                >
                   <a className="items-center p-4 text-sm font-medium leading-5 text-teal-800 bg-teal-100 rounded hover:bg-teal-400">
                     {skill.name}
                   </a>

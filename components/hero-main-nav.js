@@ -1,11 +1,17 @@
 import { menuOptions } from "../lib/menu-options";
 import Link from "next/link";
+import Logo from "./logo";
 
 function HeroMainNav({ toggleMobile }) {
   return (
     <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
       <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
         <div className="flex items-center justify-between w-full md:w-auto">
+          <Link href="/">
+            <a>
+              <Logo></Logo>
+            </a>
+          </Link>
           <div className="flex items-center -mr-2 md:hidden">
             <button
               onClick={toggleMobile}

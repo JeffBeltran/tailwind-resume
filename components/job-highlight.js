@@ -8,7 +8,11 @@ function JobHighlight({ highlight }) {
         <div className="flex overflow-hidden">
           {highlight.skills.map((skill, index) => {
             return (
-              <Link href={`/skills/${skill.slug}`} key={index}>
+              <Link
+                href="/skills/[slug]"
+                as={`/skills/${skill.slug}`}
+                key={index}
+              >
                 <a className="first:ml-0 -ml-1 inline-block px-2.5 py-0.5 rounded hover:text-teal-50 hover:bg-teal-500 text-white shadow-solid bg-teal-400">
                   {skill.name}
                 </a>

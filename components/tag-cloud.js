@@ -28,7 +28,11 @@ function TagCloud({ skills }) {
           <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
             {skills.map((skill, index) => {
               return (
-                <Link key={index} href={`/skills/${skill.slug}`}>
+                <Link
+                  key={index}
+                  href="/skills/[slug]"
+                  as={`/skills/${skill.slug}`}
+                >
                   <a className="flex justify-center col-span-1 px-8 py-8 text-teal-800 bg-teal-100 border border-teal-100 rounded-lg hover:border-teal-300 hover:shadow">
                     <p>{skill.name}</p>
                   </a>

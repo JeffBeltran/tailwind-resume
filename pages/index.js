@@ -1,9 +1,14 @@
+import Head from "next/head";
+
 import { Hero, Testimonial, FAQ, CTA, TagCloud, Footer } from "../components";
 import { getFeaturedSkills } from "../lib/skills";
 
 export default function Home({ featuredSkills }) {
   return (
     <>
+      <Head>
+        <title>{`Jeff Beltran, the new tailwind employee`}</title>
+      </Head>
       <Hero>
         <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 font-heading sm:text-5xl sm:leading-none md:text-6xl">
           Introducing the next <span className="underline">tailwind UI</span>{" "}
