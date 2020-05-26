@@ -1,8 +1,19 @@
-import "../styles/index.css";
-import { Footer } from "../components";
 import Head from "next/head";
+import React, { useEffect } from "react";
+
+import "../styles/index.css";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    let tracker = window.document.createElement("script");
+    let firstScript = window.document.getElementsByTagName("script")[0];
+    tracker.defer = true;
+    tracker.setAttribute("site", "ENLQOGXA");
+    tracker.setAttribute("spa", "auto");
+    tracker.src = "https://jay.tailwindemployee.com/script.js";
+    firstScript.parentNode.insertBefore(tracker, firstScript);
+  }, []);
+
   return (
     <>
       <Head>
