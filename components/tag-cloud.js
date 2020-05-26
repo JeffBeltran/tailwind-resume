@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { tagHighlights } from "../lib/skills";
 
-function TagCloud() {
+function TagCloud({ skills }) {
   return (
     <div className="bg-gray-50">
       <div className="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8">
@@ -27,11 +26,11 @@ function TagCloud() {
             </div>
           </div>
           <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-            {tagHighlights.map((tag, index) => {
+            {skills.map((skill, index) => {
               return (
-                <Link key={index} href={`/skills/${tag.slug}`}>
+                <Link key={index} href={`/skills/${skill.slug}`}>
                   <a className="flex justify-center col-span-1 px-8 py-8 text-teal-800 bg-teal-100 border border-teal-100 rounded-lg hover:border-teal-300 hover:shadow">
-                    <p>{tag.name}</p>
+                    <p>{skill.name}</p>
                   </a>
                 </Link>
               );

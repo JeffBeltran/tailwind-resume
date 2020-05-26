@@ -12,7 +12,7 @@ function Job({ job }) {
           </div>
           <div className="sm:col-span-1">
             <dt className="leading-5 text-teal-400 font-heading">Company</dt>
-            <dd className="mt-1 leading-5 text-gray-900">{job.company}</dd>
+            <dd className="mt-1 leading-5 text-gray-900">{job.company.name}</dd>
           </div>
           <div className="sm:col-span-1">
             <dt className="leading-5 text-teal-400 font-heading">Dates</dt>
@@ -22,7 +22,7 @@ function Job({ job }) {
           </div>
           <div className="sm:col-span-1">
             <dt className="leading-5 text-teal-400 font-heading">Location</dt>
-            <dd className="mt-1 leading-5 text-gray-900">{job.location}</dd>
+            <dd className="mt-1 leading-5 text-gray-900">{`${job.city}, ${job.state}`}</dd>
           </div>
         </>
       )}
