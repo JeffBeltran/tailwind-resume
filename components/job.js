@@ -22,7 +22,9 @@ function Job({ job }) {
           </div>
           <div className="sm:col-span-1">
             <dt className="text-lg text-teal-400 font-heading">Location</dt>
-            <dd className="mt-2 text-teal-900">{`${job.city}, ${job.state}`}</dd>
+            <dd className="mt-2 text-teal-900">
+              {`${job.city}, ${job.state}`} USA
+            </dd>
           </div>
         </>
       )}

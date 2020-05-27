@@ -7,13 +7,13 @@ function TagCloud({ skills }) {
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div>
             <h2 className="text-3xl font-extrabold leading-9 text-gray-900 font-heading sm:text-4xl sm:leading-10">
-              What kind of skills is Jeff bringing to the Tailwind team?
+              What is Jeff bringing to the Tailwind team?
             </h2>
             <p className="max-w-3xl mt-3 text-lg leading-7 text-gray-600 ">
-              Well as luck would have it he put together a list of frameworks,
+              Well as luck would have it, he put together a list of frameworks,
               languages and relevant technologies he has used in some capacity.
-              To the right are the most relevant but feel free to browse them
-              all.
+              To the right (or bottom if on mobile) are the most relevant, but
+              feel free to browse them all.
             </p>
             <div className="mt-8 sm:flex">
               <div className="rounded-md shadow">

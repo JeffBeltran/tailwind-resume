@@ -6,7 +6,7 @@ function JobHighlight({ highlight }) {
       <div className="flex flex-col px-4 py-4 space-y-4 sm:px-6">
         <div className="text-teal-900">{highlight.description}</div>
         {highlight.skills.length > 0 && (
-          <div className="flex overflow-hidden">
+          <div className="flex flex-wrap sm:overflow-hidden">
             {highlight.skills.map((skill, index) => {
               return (
                 <Link
@@ -14,7 +14,7 @@ function JobHighlight({ highlight }) {
                   as={`/skills/${skill.slug}`}
                   key={index}
                 >
-                  <a className="first:ml-0 -ml-1 inline-block px-2.5 py-0.5 rounded hover:text-teal-50 hover:bg-teal-500 text-white shadow-solid bg-teal-400">
+                  <a className="first:ml-0 -ml-1 inline-block px-2.5 py-0.5 rounded hover:text-teal-50 hover:bg-teal-500 text-white first:shadow-none shadow-solid bg-teal-400">
                     {skill.name}
                   </a>
                 </Link>

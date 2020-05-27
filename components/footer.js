@@ -10,7 +10,7 @@ function Footer() {
             {menuOptions.map((menuOption, index) => {
               return (
                 <Link key={index} href={menuOption.path}>
-                  <a className="text-base leading-6 text-teal-500 hover:text-white">
+                  <a className="text-base leading-6 text-teal-500 whitespace-no-wrap hover:text-white">
                     {menuOption.name}
                   </a>
                 </Link>

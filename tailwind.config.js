@@ -19,6 +19,7 @@ module.exports = {
   variants: {
     padding: ["responsive", "first"],
     margin: ["responsive", "first"],
+    boxShadow: ["responsive", "hover", "focus", "first"],
   },
   plugins: [require("@tailwindcss/ui")],
 };
