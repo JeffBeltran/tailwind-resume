@@ -19,9 +19,9 @@ export default function Home({ featuredSkills }) {
           Jeff Beltran
         </p>
         <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-          His imposter syndrome was giving him doubts, but after spending his
-          nights and the weekend to learn Next.js and React to build this site,
-          Adam and Steve realized he had the right chops for the job.
+          His imposter syndrome was giving him doubts, but after spending a few
+          nights and the weekend to learn Next.js and build this site, Adam and
+          Steve realized he had the right chops for the job.
         </p>
       </Hero>
       <Testimonial
