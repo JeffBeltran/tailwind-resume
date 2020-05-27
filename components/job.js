@@ -7,32 +7,32 @@ function Job({ job }) {
       {!job.project && (
         <>
           <div className="sm:col-span-1">
-            <dt className="leading-5 text-teal-400 font-heading">Title</dt>
-            <dd className="mt-1 leading-5 text-gray-900">{job.title}</dd>
+            <dt className="text-lg text-teal-400 font-heading">Title</dt>
+            <dd className="mt-2 text-teal-900">{job.title}</dd>
           </div>
           <div className="sm:col-span-1">
-            <dt className="leading-5 text-teal-400 font-heading">Company</dt>
-            <dd className="mt-1 leading-5 text-gray-900">{job.company.name}</dd>
+            <dt className="text-lg text-teal-400 font-heading">Company</dt>
+            <dd className="mt-2 text-teal-900">{job.company.name}</dd>
           </div>
           <div className="sm:col-span-1">
-            <dt className="leading-5 text-teal-400 font-heading">Dates</dt>
-            <dd className="mt-1 leading-5 text-gray-900">
+            <dt className="text-lg text-teal-400 font-heading">Dates</dt>
+            <dd className="mt-2 text-teal-900">
               <DateRange start={job.start} end={job.end}></DateRange>
             </dd>
           </div>
           <div className="sm:col-span-1">
-            <dt className="leading-5 text-teal-400 font-heading">Location</dt>
-            <dd className="mt-1 leading-5 text-gray-900">{`${job.city}, ${job.state}`}</dd>
+            <dt className="text-lg text-teal-400 font-heading">Location</dt>
+            <dd className="mt-2 text-teal-900">{`${job.city}, ${job.state}`}</dd>
           </div>
         </>
       )}
       <div className="sm:col-span-2">
-        <dt className="leading-5 text-teal-400 font-heading">About</dt>
-        <dd className="mt-1 leading-5 text-gray-900">{job.description}</dd>
+        <dt className="text-lg text-teal-400 font-heading">About</dt>
+        <dd className="mt-2 text-teal-900">{job.description}</dd>
       </div>
       <div className="sm:col-span-2">
-        <dt className="leading-5 text-teal-400 font-heading">Highlights</dt>
-        <dd className="mt-2 leading-5 text-gray-900">
+        <dt className="text-lg text-teal-400 font-heading">Highlights</dt>
+        <dd className="mt-2 text-gray-900">
           <div className="overflow-hidden bg-white shadow sm:rounded-md">
             <ul className="divide-y divide-gray-200">
               {job.highlights.map((highlight, index) => {

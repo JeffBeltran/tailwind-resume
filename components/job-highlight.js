@@ -4,7 +4,7 @@ function JobHighlight({ highlight }) {
   return (
     <li>
       <div className="flex flex-col px-4 py-4 space-y-4 sm:px-6">
-        <div className="leading-5 text-gray-600">{highlight.description}</div>
+        <div className="text-teal-900">{highlight.description}</div>
         {highlight.skills.length > 0 && (
           <div className="flex overflow-hidden">
             {highlight.skills.map((skill, index) => {

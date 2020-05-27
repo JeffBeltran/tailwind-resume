@@ -28,7 +28,7 @@ function MainNav({ activeUrl }) {
                         menuOption.path === activeUrl
                           ? "border-teal-500"
                           : "border-transparent"
-                      } inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-gray-900 transition duration-150 ease-in-out border-b-2 focus:outline-none focus:border-teal-700`}
+                      } inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 transition duration-150 ease-in-out border-b-2 focus:outline-none focus:border-teal-700`}
                     >
                       {menuOption.name}
                     </a>

@@ -9,11 +9,11 @@ function TagCloud({ skills }) {
             <h2 className="text-3xl font-extrabold leading-9 text-gray-900 font-heading sm:text-4xl sm:leading-10">
               What kind of skills is Jeff bringing to the Tailwind team?
             </h2>
-            <p className="max-w-3xl mt-3 text-lg leading-7 text-gray-500 ">
-              He was kind enough to put together a list of frameworks, languages
-              and relevant technologies he has used in some compactly. To the
-              right are the most relevant but feel free to browse the full tag
-              cloud for more
+            <p className="max-w-3xl mt-3 text-lg leading-7 text-gray-600 ">
+              Well as luck would have it he put together a list of frameworks,
+              languages and relevant technologies he has used in some capacity.
+              To the right are the most relevant but feel free to browse them
+              all.
             </p>
             <div className="mt-8 sm:flex">
               <div className="rounded-md shadow">

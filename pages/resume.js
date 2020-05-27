@@ -36,14 +36,14 @@ export default function Resume({ featuredSkills, jobs, degrees, projects }) {
                   as={`/skills/${skill.slug}`}
                   key={index}
                 >
-                  <a className="items-center p-4 text-sm font-medium leading-5 text-teal-800 bg-teal-100 rounded hover:bg-teal-400">
+                  <a className="items-center p-4 text-sm font-medium text-teal-800 bg-teal-100 rounded hover:bg-teal-400">
                     {skill.name}
                   </a>
                 </Link>
               );
             })}
             <Link href={`/skills`}>
-              <a className="items-center p-4 text-sm font-medium leading-5 text-teal-500 border border-transparent rounded hover:text-teal-800 hover:border-teal-800">
+              <a className="items-center p-4 text-sm font-medium text-teal-500 border border-transparent rounded hover:text-teal-800 hover:border-teal-800">
                 View all skills ...
               </a>
             </Link>
