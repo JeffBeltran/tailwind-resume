@@ -51,7 +51,16 @@ export default function Resume({ featuredSkills, jobs, degrees, projects }) {
         </Card>
         <Card heading="Professional Experience">
           <div className="space-y-6 divide-y divide-teal-400">
-            {jobs.map((job, index) => {
+            {jobs
+              .filter((job) => !job.project)
+              .map((job, index) => {
+                return <Job job={job} key={index}></Job>;
+              })}
+          </div>
+        </Card>
+        <Card heading="Relevant Side Projects">
+          <div className="space-y-6 divide-y divide-teal-400">
+            {projects.map((job, index) => {
               return <Job job={job} key={index}></Job>;
             })}
           </div>
@@ -65,13 +74,6 @@ export default function Resume({ featuredSkills, jobs, degrees, projects }) {
               </div>
             );
           })}
-        </Card>
-        <Card heading="Relevant Side Projects">
-          <div className="space-y-6 divide-y divide-teal-400">
-            {projects.map((job, index) => {
-              return <Job job={job} key={index}></Job>;
-            })}
-          </div>
         </Card>
       </div>
     </BasePage>
