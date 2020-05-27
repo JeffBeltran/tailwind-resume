@@ -10,18 +10,19 @@ export default function Home({ featuredSkills }) {
         <title>{`Jeff Beltran, the new tailwind employee`}</title>
       </Head>
       <Hero>
-        <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 font-heading sm:text-5xl sm:leading-none md:text-6xl">
-          Introducing the next <span className="underline">tailwind UI</span>{" "}
-          employee <br />
+        <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 font-heading sm:text-5xl sm:leading-none md:text-6xl">
+          Introducing the next{" "}
+          <span className="text-gray-900 underline">tailwind</span> employee{" "}
+          <br />
         </h2>
 
         <p className="mt-4 text-4xl font-extrabold leading-10 tracking-tight text-teal-400 font-heading sm:text-5xl sm:leading-none md:text-6xl">
           Jeff Beltran
         </p>
         <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-          He took a little over a week to apply, as he had to teach himself
-          React and Nextjs. But he proved to himself that his imposter syndrome
-          was all for naught and showed Adam he had the right chops for the job.
+          His imposter syndrome was giving him doubts, but after spending his
+          nights and the weekend to learn Next.js and React to build this site,
+          Adam and Steve realized he had the right chops for the job.
         </p>
       </Hero>
       <Testimonial
@@ -33,8 +34,8 @@ export default function Home({ featuredSkills }) {
         Woof Woof Bark Bark
       </Testimonial>
       <FAQ></FAQ>
-      <CTA></CTA>
       <TagCloud skills={featuredSkills}></TagCloud>
+      <CTA></CTA>
       <Footer></Footer>
     </>
   );

@@ -28,7 +28,7 @@ function Job({ job }) {
       )}
       <div className="sm:col-span-2">
         <dt className="leading-5 text-teal-400 font-heading">About</dt>
-        <dd className="mt-1 leading-5 text-gray-900">{job.overview}</dd>
+        <dd className="mt-1 leading-5 text-gray-900">{job.description}</dd>
       </div>
       <div className="sm:col-span-2">
         <dt className="leading-5 text-teal-400 font-heading">Highlights</dt>

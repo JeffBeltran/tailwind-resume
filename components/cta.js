@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function CTA({ children }) {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-50">
       <div className="max-w-screen-xl px-4 py-12 mx-auto text-center sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 font-heading sm:text-4xl sm:leading-10">
           Ready to learn more about Jeff?

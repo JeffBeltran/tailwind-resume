@@ -7,7 +7,7 @@ import { getFeaturedSkills } from "../lib/skills";
 import { getAllJobs } from "../lib/jobs";
 import { getAllDegrees } from "../lib/degrees";
 
-export default function Resume({ featuredSkills, jobs, degrees }) {
+export default function Resume({ featuredSkills, jobs, degrees, projects }) {
   const router = useRouter();
 
   return (
@@ -28,7 +28,7 @@ export default function Resume({ featuredSkills, jobs, degrees }) {
           </TextBlock>
         </Card>
         <Card heading="Relevant Skills">
-          <div className="grid grid-cols-3 gap-4 ">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {featuredSkills.map((skill, index) => {
               return (
                 <Link
@@ -68,7 +68,7 @@ export default function Resume({ featuredSkills, jobs, degrees }) {
         </Card>
         <Card heading="Relevant Side Projects">
           <div className="space-y-6 divide-y divide-teal-400">
-            {jobs.map((job, index) => {
+            {projects.map((job, index) => {
               return <Job job={job} key={index}></Job>;
             })}
           </div>
@@ -82,11 +82,16 @@ export async function getStaticProps() {
   const featuredSkills = await getFeaturedSkills();
   const jobs = await getAllJobs();
   const degrees = await getAllDegrees();
+  const projects = await jobs.filter((job) => {
+    return job.project;
+  });
+
   return {
     props: {
       featuredSkills,
       jobs,
       degrees,
+      projects,
     },
   };
 }
